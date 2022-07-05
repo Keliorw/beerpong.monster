@@ -1,5 +1,6 @@
 <?php
     $title = 'Главная страница';
+    
 ?>
 <!DOCTYPE html>
 <html lang="ru">
