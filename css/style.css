@@ -1,12 +1,47 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body{
+  background-color: #212121;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 867px;
+}
+
+.card, .card div {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  width: 470px;
+  height: 567px;
+  border-radius: 25px;
+  transform: perspective(2000px)
+             rotateY(0deg); /*меняйте угол, чтобы увидеть эффект*/
+}
+.card div {
+  box-shadow: 0px 0px 10px #8d9096;
+}
+.card div:nth-child(1) {
+  background-image: url('http://pm1.narvii.com/7357/1317c7c3181c2758b5f3894d149372f2eb537b8cr1-720-720v2_uhq.jpg');
+}
+ 
+.card div:nth-child(2) {
+  background-image: url('https://nntheblog.b-cdn.net/wp-content/uploads/2022/04/Does-Tanjiro-Die-in-Demon-Slayer.jpg');
+  background-color: #fff;
+  backface-visibility: hidden;
 }
 
